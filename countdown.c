@@ -1,21 +1,13 @@
 #include<stdio.h>
-
 int main(){
+   int num;
 
-int num;
-
-printf("Inserisci un numero intero: ");
-scanf("%d", &num);
+   printf("Inserisci un numero intero: ");
+   scanf("%d", &num);
 
 while(num>0){
-    num--;
     printf("%d\n", num);
- 
+    num--;
 } 
-
-
-
-
-
 return 0;
 }
