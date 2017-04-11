@@ -8,14 +8,10 @@ int main(){
  scanf("%d", &num);
 
  while(i<5){
-   num += 3;
    printf("%d\n", num);
+   num+=3;
    i++;
-   
 }
-
-
-
 
 return 0;
 }
