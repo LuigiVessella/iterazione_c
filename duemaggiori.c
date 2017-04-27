@@ -1,19 +1,21 @@
 #include<stdio.h>
 
 int main(){
-  int num=0, i=0, max, max2;
+int num=0, i=0, max, max2=0;
 
   max=num;
+  
   while(i<10){
 	  printf("Inserisci numero: ");
 	  scanf("%d", &num);
-          if(num>max){
-		 max=num;
+          if(num>=max){
+       	   max2=max;
+	   max=num;
 	  }
 	  
-	 if(max2<max){
-		 max2=num;
-	 }
+	  else if(num>=max2) 
+		  max2=num;
+	 
 i++;
   }
  printf("Il maggiore e' %d\n ", max);
