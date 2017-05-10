@@ -4,7 +4,7 @@ int  main(){
 int lato,r=0, c=0;
 
 do{
-	printf("Inserisci dimensione lato:");
+	printf("Numero asterischi: ");
 	scanf("%d",&lato);
 }while(lato<1 || lato>20);
 while(r<5){
