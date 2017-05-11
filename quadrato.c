@@ -7,9 +7,9 @@ do{
 	printf("Numero asterischi: ");
 	scanf("%d",&lato);
 }while(lato<1 || lato>20);
-while(r<5){
+while(r<lato){
 	c=0;
-	while(c<5){
+	while(c<lato){
           printf("*");
 	  c++;
 	}
