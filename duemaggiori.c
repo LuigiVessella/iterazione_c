@@ -4,13 +4,14 @@ int main(){
 int num=0, i=0, max, max2=0;
 
   max=num;
-  
+  max2=num;
   while(i<10){
 	  printf("Inserisci numero: ");
 	  scanf("%d", &num);
           if(num>=max){
-       	   max2=max;
-	   max=num;
+	       max2 = max;
+	       max=num;
+
 	  }
 	  
 	  else if(num>=max2) 
