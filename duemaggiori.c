@@ -22,7 +22,7 @@ int num=0, i=0, max, max2=0;
 	 
 i++;
   }
- printf("Il maggiore e' %d\n ", max);
+ printf("Il maggiore e' %d\n", max);
  printf("Il secondo maggiore e' %d\n ", max2);
 
 return 0;
