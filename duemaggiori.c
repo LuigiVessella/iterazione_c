@@ -3,9 +3,12 @@
 int main(){
 int num=0, i=0, max, max2=0;
 
-  max=num;
-  max2=num;
-  while(i<10){
+  printf("Inserisci numero: ");
+  scanf("%d",&max);
+  printf("Inserisci numero: ");
+  scanf("%d", &max2);
+  
+  while(i<8){
 	  printf("Inserisci numero: ");
 	  scanf("%d", &num);
           if(num>=max){
