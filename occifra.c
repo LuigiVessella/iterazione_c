@@ -12,7 +12,7 @@ int main(){
  }while(num<0);
 	
  while(num > 0){
-       modul = num%10;
+       modulo = num%10;
        i = modulo;
        if(i==7)a++;
        num = num/10;
