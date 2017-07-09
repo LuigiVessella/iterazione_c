@@ -3,16 +3,19 @@
 int main(){
 
 	
- int numb;
- int numd;
- int numf=0;
+ int numb;/*numero binario*/
+ int numd;/*numero decimale*/
+ int numf=0;/*appoggio*/
  int modulo,molt=1, i=0, a=1,b=0;
-  
+        
+        /*acquisizione*/
         do{
 	 printf("Inserisci numero binario: ");
 	 scanf("%d",&numb);
          numf=numb;
          
+
+
 	   while(numb>0){
 	   modulo=numb%10;
 	   i=modulo; 

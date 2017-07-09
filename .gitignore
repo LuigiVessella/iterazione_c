@@ -1,4 +1,6 @@
 *.o
+figure.c
+pigreco
 countdown
 ditreintre
 tabelline
@@ -13,3 +15,4 @@ cripta
 decripta
 figure
 sequenze
+rombo
