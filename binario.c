@@ -4,38 +4,33 @@ int main(){
 
 	
  int numb;/*numero binario*/
- int numd;/*numero decimale*/
- int numf=0;/*appoggio*/
- int modulo,molt=1, i=0, a=1,b=0;
+ int numd=0;/*numero decimale*/
+ int molt=1,i=0,ver=0;
         
-        /*acquisizione*/
-        do{
-	 printf("Inserisci numero binario: ");
-	 scanf("%d",&numb);
-         numf=numb;
-         
-
-
-	   while(numb>0){
-	   modulo=numb%10;
-	   i=modulo; 
+        
+      
+ 
+         do{
+       	 printf("Inserisci numero binario: ");
+         scanf("%d",&numb);       
+                      
+                 while(numb>0){
+                 i=numb%10;   
 	         if(i==0 || i==1){
-         	        a=0;
-		        b++;
-	               }
-         
-                 while(b>0){
-		      modulo=numf%10;
-		      numf/=10;
-		      numd=numd+(modulo*molt);
-		      molt*=2;
-		      b--;
-	             }
+                        ver=0;
+                        numb/=10;
+                        numd=numd+(i*molt);
+                        molt*=2;
+	            }
 
-	 numb=numb/10;
-	 }
-	 
-	 }while(a!=0);
+                    else
+                     {
+                       ver=1;  
+	               break;
+                      }
+
+                       }
+	 }while(ver==1);
  
 printf("Il numero in decimale e': %d\n", numd);
 return 0;
