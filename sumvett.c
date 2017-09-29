@@ -1,27 +1,27 @@
 #include<stdio.h>
-#define MAX 100
+#define MAX 10
 int main(){
 
-float somma=0.0;
-float vett[MAX];
-float media;
+double somma=0.0;
+double vett[MAX];
+double media;
 int i;
 
-printf("Inserisci dieci numeri interi:\n ");
+printf("Inserisci dieci numeri:\n ");
 
 
 for(i=0; i<10; i++){
    printf("? ");
-   scanf("%f", &vett[i]);
+   scanf("%lf", &vett[i]);
 }
 
 for(i=0; i<10; i++){
     somma+=vett[i];
-    printf("numbers[%d] = %f\n", i, vett[i]);
+    printf("numbers[%d] = %lf\n", i, vett[i]);
 }
 media= somma/10;
 
-printf("Somma:%f\nMedia:%f\n", somma, media);
+printf("Somma:%lf\nMedia:%lf\n", somma, media);
 
 return 0;
 }
