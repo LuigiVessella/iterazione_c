@@ -6,14 +6,6 @@ int vett[MAX];
 void *p_num;
 int i;
 
-printf("Inserisci dieci numeri interi:\n");
-
-for(i=0; i<MAX; i++){
-
-    printf("? ");
-    scanf("%d", &vett[i]);
-}
-
 
 for(i=0; i<MAX; i++){
 
