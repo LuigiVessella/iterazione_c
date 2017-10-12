@@ -6,10 +6,7 @@ int main(){
  int numb;/*numero binario*/
  int numd=0;/*numero decimale*/
  int molt=1,i=0,ver;
-        
-        
-      
- 
+            
          do{
        	 printf("Inserisci numero binario: ");
          scanf("%d",&numb);       
