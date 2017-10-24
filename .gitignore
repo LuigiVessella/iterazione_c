@@ -1,5 +1,5 @@
 *.o
-figure.c
+figure
 pigreco
 countdown
 ditreintre
