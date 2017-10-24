@@ -3,14 +3,14 @@
 int main(){
 
 int vett[MAX];
-void *p_num;
+int *p_num;
 int i;
 
 
 for(i=0; i<MAX; i++){
 
     p_num = &vett[i];
-    printf("Indirizzo di num[%d]: %p\n", i, p_num);    
+    printf("Indirizzo di num[%d]: %p\n", i, (void*)p_num);
 }
 
 return 0;
