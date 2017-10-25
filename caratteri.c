@@ -2,9 +2,9 @@
 
 int main(){
 	int i=0;
-	char str[]="Ciao a tutti!";
+	char str[]="Ciao a tutti! oe";
 	
-	for(i=0; i<14; i++){
+	for(i=0; str[i]!='\0'; i++){
 		printf("%c\n", str[i]);
 	}
 
