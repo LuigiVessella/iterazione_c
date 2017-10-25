@@ -3,7 +3,7 @@
 int main(){
  
  float pig,tot=0;
- int num,i;
+ int num,i,segno=1;
  float div= 3.0;
 
  printf("Quanti termini vuoi utilizzare: ");
@@ -14,11 +14,9 @@ int main(){
 
  for(i=1; i<=num-2; i++){
     div+=2.0;
-  
-    if(i%2 == 0)
-        tot=tot-(4.0/div);
-    else
-        tot=tot+(4.0/div);
+    segno*=-1;
+    tot=tot-((4.0/div)*segno);
+   
 }
 
 printf("Approssimato: %f\n", tot);
