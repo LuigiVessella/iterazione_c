@@ -1,23 +1,27 @@
 #include<stdio.h>
 #include<ncurses.h>
 #include<time.h>
+
 int main(){
-struct timespec intervallo;
-intervallo.tv_sec=0;
-intervallo.tv_nsec=500*1000*1000;
-  initscr();
-  curs_set(0);/*cursore invisibile*/
-  
-  addch("*");
-  nanosleep(&intervallo, NULL);
-  refresh();
+    struct timespec tempo;
+    tempo.tv_sec=0;
+    tempo.tv_nsec=800*1000*1000;
+ 
+    initscr();
 
-   addch("*");
-   nanosleep(&intervallo, NULL);
-   refresh();
-
-
-  endwin();
-
-  return 0;
+    curs_set(0);/*cursore invisibile*/
+    
+    for(int i =0; i<10; i++){
+	    
+            mvaddstr(3,3, "*");
+            refresh();
+            nanosleep(&tempo, NULL);
+            mvaddstr(3,3, " ");
+            refresh();
+            nanosleep(&tempo, NULL);
+    }
+     getch();
+     endwin();
+return 0;
 }
+
