@@ -18,7 +18,7 @@ int main(){
             nanosleep(&tempo, NULL);/*attende*/
             mvaddstr(3,3, " ");
             refresh();
-	    nanoleep(&tempo, NULL);
+	    nanosleep(&tempo, NULL);
     }
      getch();
      endwin();
