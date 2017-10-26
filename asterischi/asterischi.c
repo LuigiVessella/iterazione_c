@@ -13,12 +13,11 @@ int main(){
     
     for(int i =0; i<10; i++){
 	    
-            mvaddstr(3,3, "*");
-            refresh();
-            nanosleep(&tempo, NULL);
+            mvaddstr(3,3, "*");/*stampa in una determinata posizione*/
+            refresh();/*pulisce lo schermo*/
+            nanosleep(&tempo, NULL);/*attende*/
             mvaddstr(3,3, " ");
             refresh();
-            nanosleep(&tempo, NULL);
     }
      getch();
      endwin();
