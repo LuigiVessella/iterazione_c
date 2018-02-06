@@ -1,26 +1,39 @@
 #include<stdio.h>
 int main(){
-  int num=0, riga, colo=1, spazi=0;
+	int num, i, a ,s, cont;
 
-  do{
-  printf("Inserisci numero di righe(dispari 1-19): ");
-  scanf("%d", &num);
-  }while(num%2==0 || num>19);
+	do{
+		printf("Inserisci numero dispari (1-19): ");
+		scanf("%d", &num);
+	}while(num>19 || num<1 || num%2==0);
 
-  for(riga=1; colo<=num/2; colo++){
-    putchar(' ');
-  }
-   putchar('*');
-   
-   for(riga=1; colo<=num; colo++){
-     putchar(' ');
-}
-for(riga=2; riga<=num/2+1; riga++){
-  for(colo=0; colo<=riga; colo++){
-    putchar(' ');
-  }
-  putchar('*');
-  
+	cont=num/2;
 
+	for(i=1; i<=num; i=i+2){
+		for(s=cont; s>0; s--){
+			putchar(' ');
+		}
+		cont--;
+		for(a=0; a<i; a++){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+
+	i=0;
+	a=0;
+	cont=num/2;
+
+	for(i=num-2; i>0; i=i-2){
+		for(s=cont; s<=num/2; s++){
+			putchar(' ');
+		}
+		cont--;
+		for(a=i; a>0; a--){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+	
 return 0;
 }
